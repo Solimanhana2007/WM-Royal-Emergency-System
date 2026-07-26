@@ -1,0 +1,50 @@
+def add_book():
+    print("  # Add Book # ")
+    book_title = input("Enter book Title : ")
+    book_writer= input("Enter The Authour Name :")
+    try:
+        book_id    = int(input("Enter book ID: "))
+    except ValueError:
+        print("ID MUST BE A NUMBER!.")
+        return
+    file = open("books.txt","a")
+    file.write(f"{book_title},{book_writer},{book_id}\n")
+    file.close()
+    print(" loading to save .......")
+    time.sleep(2)
+    print("Book added successfully!")
+def view_books():
+    print("  # View Books # ")
+    try:
+        file = open("books.txt","r")
+        data = file.read()
+        if data == "":
+            print("No books found.")
+        else:
+            print(data)
+          
+    except FileNotFoundError:
+        print("No books found. ")
+
+while True:
+
+  print("###### Library system ######")
+  print("1. Add Book")
+  print("2. View Books")
+  print("3. Exit")
+
+  try:
+       choice = int(input("Enter your choice: "))
+
+       if choice == 1:
+            add_book()
+       elif choice ==2:
+            view_books()
+       elif choice ==3:
+            print("Exiting...")
+            
+       else:
+           print("Invalid choice..")
+
+  except ValueError:
+    print("Please enter a valid number.")
