@@ -1,0 +1,10 @@
+import numpy as np
+Scores = np.array([650,560,456.800,563,710])
+print("-------MATRIX STATISTICS-------")
+print("\nScores :",Scores)
+print("\nMean:",np.mean(Scores))
+print("\nMax Number:", np.max(Scores))
+print("\nMin Number:", np.min(Scores))
+print("\nStandard Deviation:", np.std(Scores))
+print("\nVariance:", np.var(Scores))
+print("\nMedian:", np.median(Scores))
