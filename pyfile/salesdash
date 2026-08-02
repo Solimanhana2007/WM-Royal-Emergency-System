@@ -1,0 +1,16 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+
+df = pd.read_csv("Salesdashboard.csv")
+
+df["Revenue"] = df["Quantity"] * df["Price"]
+
+sales_by_product = df.groupby("Product")["Revenue"].sum()
+
+sales_by_product.plot(kind="bar")
+
+plt.title("Revenue by Product")
+plt.xlabel("Product")
+plt.ylabel("Revenue")
+
+plt.show()

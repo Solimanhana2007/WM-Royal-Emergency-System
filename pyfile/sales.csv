@@ -1,0 +1,16 @@
+Order_ID,Date,City,Category,Product,Quantity,Price
+1001,2026-01-03,Cairo,Laptop,Laptop Pro,2,35000
+1002,2026-01-03,Giza,Phone,Galaxy S,3,18000
+1003,2026-01-04,Alexandria,Tablet,iPad Air,1,28000
+1004,2026-01-05,Cairo,Phone,iPhone 17,2,42000
+1005,2026-01-05,Mansoura,Laptop,ThinkPad X1,1,39000
+1006,2026-01-06,Giza,Accessory,Mouse,5,450
+1007,2026-01-06,Cairo,Accessory,Keyboard,4,1200
+1008,2026-01-07,Alexandria,Phone,Galaxy S,2,18000
+1009,2026-01-08,Cairo,Laptop,Laptop Pro,,35000
+1010,2026-01-08,Giza,Phone,iPhone 17,1,42000
+1011,2026-01-09,Cairo,Tablet,iPad Air,2,-28000
+1012,2026-01-10,Mansoura,Accessory,Mouse,3,450
+1012,2026-01-10,Mansoura,Accessory,Mouse,3,450
+1013,2026-01-11,Alexandria,Laptop,ThinkPad X1,2,39000
+1014,2026-01-12,Cairo,Phone,Galaxy S,1,18000
